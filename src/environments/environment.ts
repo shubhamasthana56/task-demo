@@ -1,7 +1,6 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build ---prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-import { CSPAuthenticationConfig, PfCoreBeEnvs } from '@vmw-pathfinder/ng-csp-authentication';
 
 export const environment = {
   production: false,
@@ -11,13 +10,6 @@ export const environment = {
     apiKey: 'blt9d048f13f004c604',
     apiVersion: 'v3'
   },
-  CSP_AUTHENTICATION_CONFIG: {
-    environment: PfCoreBeEnvs.Development,
-    client_id: 'cm-dev',
-    csp_login_url: 'https://console-stg.cloud.vmware.com/csp/gateway/discovery ',
-    csp_sign_up_url: 'https://console-stg.cloud.vmware.com/csp/gateway/portal/#/onboarding/registration/signup',
-    application_path: 'calculators'
-  }
 };
 
 /*

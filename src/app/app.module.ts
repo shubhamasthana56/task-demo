@@ -1,5 +1,4 @@
 import { BrowserModule } from '@angular/platform-browser';
-import {  CSPAuthenticationModule } from '@vmw-pathfinder/ng-csp-authentication';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
@@ -15,6 +14,7 @@ import { ContentComponent } from './content/content.component';
 import { ProductItemsComponent } from './product-items/product-items.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LocatorComponent } from './locator/locator.component';
+import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -33,7 +33,9 @@ import { LocatorComponent } from './locator/locator.component';
     BrowserModule,
     HttpClientModule,
     NgbModule.forRoot(),
-    CSPAuthenticationModule.forRoot(environment.CSP_AUTHENTICATION_CONFIG),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCUcf4lzugymI8Xqil2mC4IfLk8DsAx7pc'
+    }),
     AngularFontAwesomeModule,
     FormsModule,
     AppRoutingModule,
