@@ -1,5 +1,4 @@
 import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
-import { ContentProviderService } from '../services/content-provider.service';
 import { Content } from './sub-header';
 @Component({
   selector: 'app-sub-header',

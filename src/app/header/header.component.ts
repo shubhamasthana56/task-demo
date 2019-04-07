@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ContentProviderService } from '../services/content-provider.service';
-import { Header } from './Header';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +9,6 @@ export class HeaderComponent implements OnInit {
 
   isNavbarCollapsed = true;
   header: any;
-  headerModel: Header;
   constructor() { }
 
   ngOnInit() {
