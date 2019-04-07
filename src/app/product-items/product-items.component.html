@@ -1,0 +1,13 @@
+<div class="mt-4 mb-4 supplements"><h4>Supplements</h4></div>
+<div class="row">
+  <div class="card-group" *ngFor="let element of supplements">
+    <div class="card mt-4 mr-2 ml-1 ">
+      <img class="card-img-top" src={{element.url}} alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title align-center">{{element.title}}</h5>
+        <p class="card-text ml-4 align-center">Price: {{element.price}}</p>
+        <a href="#" class="btn btn-success">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</div>

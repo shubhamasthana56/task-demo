@@ -1,0 +1,25 @@
+<div class="header">
+  <nav class="navbar navbar-expand-md  navbar-dark fixed-top">
+    <a class="headerlogo" href="#" target="_blank">
+      HealthProducts
+    </a>
+    <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse ">
+      <div class="container-fluid">
+        <div class="col-md p-0">
+          <ul class="navbar-nav justify-content-end">
+            <ng-container *ngFor="let element of header">
+              <li class="nav-item">
+                <a class="nav-link" href="#">{{element}}</a>
+              </li> 
+            </ng-container>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,64 @@
+@import 'src/scss/colors';
+.header {
+    .navbar {
+        padding-left: 35px;
+    }
+    .navbar-nav {
+        background-color: $grey-extra-dark;
+        
+        .nav-link {
+            &:hover {
+                background-color: $grey-light;
+            }
+        }
+        a.nav-link {
+            color: white;
+        }
+    }
+    
+    .brand-logo {
+        height: 49px;
+        margin-right: 0px;
+    }
+    @media only screen and (min-width:769px) {
+        .navbar {
+            height: 40px;
+        }
+    }
+    @media only screen and (max-width:769px) {
+        .navbar {
+            padding: 0 10px;
+
+        }
+        .brand-logo {
+            height: 40px;
+            margin-right: 0px;
+        }
+        button {
+            border-width: 0px;
+            color: white;
+            margin-right: -10px;
+        }
+        .container-fluid {
+            padding-left: 0px;
+            margin-bottom: 8px;
+        }
+    }
+    .navbar {
+        background-color: $grey-extra-dark;
+    }
+    .navbar-nav {
+        a.nav-link {
+            color: white;
+        }
+        .nav-link {
+            &:hover {
+                background-color: $grey-light;
+            }
+        }
+       
+    }
+    .headerlogo {
+        color: white;
+    }
+}

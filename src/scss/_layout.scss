@@ -1,0 +1,20 @@
+main {
+    header {
+        position: fixed;
+        top: 0px;
+
+        width: 100%;
+    }
+    .sub-header {
+        padding-top: 40px;
+    }
+
+    footer {
+        bottom: 0;
+        position: relative;
+
+    }
+    .canvas-content {
+        padding-left: $canvas-padding-left;
+    }
+}

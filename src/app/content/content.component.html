@@ -1,0 +1,11 @@
+<div class="mt-4 mb-4 article"><h4>ARTICLES & TRAININGS</h4></div>
+<div class="row">
+  <div class="card-group" *ngFor="let element of articles">
+    <div class="card mr-4 ml-2">
+      <img class="card-img-top" src={{element.src}} alt="Card image cap">
+      <div class="card-body">
+        <a href="{{element.link}}" class="card-text">{{element.text}}</a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+@font-face {
+    font-family: proxima-nova-light;
+    src: url(fonts/ProximaNova-Light.otf);
+}
+@font-face {
+  font-family: proxima-nova-semi-bold;
+  src: url(fonts/ProximaNova-Semibold.otf);
+}
+
+@font-face {
+  font-family: proxima-nova-regular;
+  src: url(fonts/ProximaNova-Regular.otf);
+}
+
+body {
+    color: $grey;
+    font-family: proxima-nova-regular;
+}
+
+.branding {
+    font-size: 50px;
+}
+
+p {
+    font-size: 18px;
+}
+
+.branded-text {
+    color: $blue;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 38px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}

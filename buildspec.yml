@@ -1,0 +1,21 @@
+---
+version: 0.1
+phases:
+  install:
+    commands:
+      - echo Entered the install phase...
+      - apt-get update
+      - npm install -g @angular/cli
+  pre_build:
+    commands:
+      - echo Entered the pre build phase...
+      - npm install npm@latest -g
+      - npm install
+  build:
+    commands:
+      - echo Entered the build phase...
+      - ng build --configuration=$ENV_CONFIG --base-href=/calculators/ 
+  post_build:
+    commands:
+      
+...

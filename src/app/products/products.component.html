@@ -1,0 +1,13 @@
+<div class="mt-4 mb-4 products"><h4>SHOP BY GOALS</h4></div>
+<div class="row">
+  <div class="card-group" *ngFor="let element of products">
+    <div class="card mt-4 mr-4 ml-2 ">
+      <img class="card-img-top" src={{element.src}} alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{element.title}}</h5>
+        <p class="card-text">{{element.text}}</p>
+        <a href="#" class="btn btn-success" (click)="openCalculatorDetailsModal(element, calculatorDetails)">More Details</a>
+      </div>
+    </div>
+  </div>
+</div>
