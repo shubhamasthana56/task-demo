@@ -1,4 +1,4 @@
-# CalculatorMarketplace 
+# TaskDemo 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 NodeJS version 8.11.
 
